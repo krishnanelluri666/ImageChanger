@@ -1,3 +1,18 @@
 <html>
 <head> create a image </head>
+
+<body>
+  <img id="image" src="image1.jpg" width="200" height="200">
+  <button onclick="changeImage()">Change Image</button>
+  <script>
+    function changeImage() {
+      var image = document.getElementById('image');
+      if (image.src.match("image1")) {
+        image.src = "image2.jpg";
+      } else {
+        image.src = "image1.jpg";
+      }
+    }
+  </script>
+</body>
 </html>
